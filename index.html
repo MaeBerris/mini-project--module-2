@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Your Page Title">
+  <meta property="og:description" content="Brief description">
+  <meta property="og:image" content="/some-image.png">
+  <meta property="og:url" content="/this-page.html">
+  <meta property="og:site_name" content="Your Site Name">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Image descriptipn">
+
+  <link href="style.css" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <title>Your Page Title</title>
+</head>
+
+
+<body>
+  <form>
+    <h1>Signup Form</h1>
+    <div class ='inputSection'>
+      <label>
+        Full Name 
+        <input id= 'nameInput'required>
+      </label>
+      <label>
+        Street Address 
+        <input id = 'addressInput'required> 
+      </label>
+      <label>
+        Email Address:
+        <input id = "emailInput" type="email" required>
+      </label>
+      <label>
+        Phone Number
+        <input id = "phoneInput"type="tel" required>
+      </label>
+      <label>
+        Password
+        <input id = "passwordInput" type="password" required>
+      </label>
+      <label>
+        Confirm Password
+        <input id = "password2Input" type ="password" required>
+      </label>
+  </div>
+    <div class ="checkbox">
+      <input id = "checkbox" type="checkbox">
+      <label>I agree to the <a href="#">terms of service</a></label>
+    </div>
+    <div id = 'errorMessage'>
+    </div>
+    <div class="buttons">
+      <button class="clearButton">Clear</button>
+      <button class= "submitButton" type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
