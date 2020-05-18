@@ -27,23 +27,23 @@
     <div class ='inputSection'>
       <label>
         Full Name 
-        <input id= 'nameInput'required>
+        <input id= 'nameInput'required autocomplete="name">
       </label>
       <label>
         Street Address 
-        <input id = 'addressInput'required> 
+        <input id = 'addressInput'required autocomplete="street-address"> 
       </label>
       <label>
         Email Address:
-        <input id = "emailInput" type="email" required>
+        <input id = "emailInput" type="email" required autocomplete="email">
       </label>
       <label>
         Phone Number
-        <input id = "phoneInput"type="tel" required>
+        <input id = "phoneInput"type="tel" required autocomplete="tel">
       </label>
       <label>
         Password
-        <input id = "passwordInput" type="password" required>
+        <input id = "passwordInput" type="password" required autocomplete="new-password">
       </label>
       <label>
         Confirm Password
@@ -61,6 +61,7 @@
       <button class= "submitButton" type="submit">Submit</button>
     </div>
   </form>
+  <script src="list.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
