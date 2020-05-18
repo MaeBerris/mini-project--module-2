@@ -23,7 +23,7 @@ function submitEvent (event){
     else if(isPasswordShort){
         passwordInput.setAttribute('style', 'border: 2px solid crimson')
         passwordInput.focus();
-        errorMessge.innerText = `Your password is too short ! How about "${createRandomString()}" ?.`
+        errorMessge.innerText = `Your password is too short ! How about "${createRandomString()}" ?`
         errorMessage.setAttribute('style', 'display:flex;')
         clearErrors(password2Input)
     }else if(confirmationIsNotIdentical){
@@ -56,6 +56,6 @@ function randomNum (){
 }
 
 function createRandomString (){
-    let sentence = `${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}`
+    let sentence = `${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}-${randomWordsArray[randomNum()]}`;
     return sentence;
 }
