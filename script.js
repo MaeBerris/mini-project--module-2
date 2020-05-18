@@ -9,16 +9,13 @@ let checkbox = document.querySelector("#checkbox")
 let errorMessge = document.querySelector('#errorMessage')
 
 
-
-
-
 form.addEventListener('submit', submitEvent);
 
 function submitEvent (event){
     let ischecked = checkbox.checked
     let isPasswordShort = passwordInput.value.length < 10
     let confirmationIsNotIdentical = passwordInput.value !== password2Input.value
-    
+    event.preventDefault()
     if(ischecked == false){
         window.alert('To continue, agree to terms of usage')
     }
